@@ -1,85 +1,152 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-image: url("assets/nsut.jpg");
-    background-size: auto 100%;
-    background-attachment: fixed;
+  background-image: url("assets/nsut.jpg");
+  background-size: auto 100%;
+  background-attachment: fixed;
 }
 
 header {
-    background-color: #000;
-    color: #fff;
-    height: 15vh;
-    position: relative;
+  background-color: #000;
+  color: #fff;
+  height: 15vh;
+  position: relative;
 }
 
 header h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .page-content {
-    width: 80%;
-    height: 100vh;
-    overflow-y: scroll;
-    margin: auto;
-    background-color: #fff;
-    opacity: 0.8;
-    position: relative;
+  width: 80%;
+  height: 100vh;
+  overflow-y: scroll;
+  margin: auto;
+  /* background-color: #fff;
+  opacity: 0.8; */
+  background-color: rgba(255, 255, 255, 0.8);
+  position: relative;
 }
 
 .page-heading {
-    text-align: center;
-    padding: 5%;
+  text-align: center;
+  padding: 5%;
 }
 
 .form-container {
-    position: absolute;
-    max-width: 50%;
-    height: 50%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    
+  position: absolute;
+  max-width: 50%;
+  height: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.form-container label{
-    font-size: 20px;
+.form-container label {
+  font-size: 20px;
 }
 
-.form-container select, option{
-    font-size: 13.5px;
-    padding: 2px;
+.form-container select,
+option {
+  font-size: 13.5px;
+  padding: 2px;
 }
 
-.form-submission {    
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+.form-submission {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 .form-submission--element {
-    padding-bottom: 8px;
+  padding-bottom: 8px;
 }
 
-.form-submission--element button{
-    min-width: 15%;
-    padding: 4px;
-    font-size: 15px;
-    border-color: #12540d;
-    border-radius: 6px;
-    color: #12540d;
-    background-color: transparent;
-    transition-duration: 0.1s;
+.form-submission--element button {
+  min-width: 15%;
+  padding: 4px 6px;
+  font-size: 15px;
+  border-color: #12540d;
+  border-radius: 6px;
+  color: #12540d;
+  background-color: transparent;
+  transition-duration: 0.1s;
 }
 
-.form-submission--element button:hover{
-    color: #ffffff;
-    background-color: #12540d;
-    cursor: pointer;
+.form-submission--element button:hover {
+  color: #ffffff;
+  background-color: #12540d;
+  cursor: pointer;
+}
+
+.btn {
+  min-width: 15%;
+  padding: 4px;
+  font-size: 15px;
+  border-color: #12540d;
+  border-radius: 6px;
+  color: #ffffff;
+  background-color: #12540d;
+}
+
+.menu {
+  text-align: center;
+  font-size: 20px;
+}
+
+.menu li {
+  padding: 3px;
+}
+
+.jobs {
+  position: relative;
+  max-width: 90%;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-bottom: 3%;
+}
+
+.jobs td,
+th {
+  padding: 4px 6px;
+}
+
+.jobs th {
+  background-color: #637366;
+  color: #fff;
+  text-align: center;
+}
+
+.jobs tbody {
+  text-align: left;
+}
+
+.jobs tbody tr:nth-of-type(even) {
+  background-color: #c4cfc7;
+}
+
+.return-to-home {
+  position: fixed;
+  left: 3%;
+  bottom: 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+.return-to-home a {
+  background-color: #fff;
+  border-radius: 5px;
+  border-color: #12540d;
+  border-width: 2px;
+  border-style: solid;
+  text-decoration: none;
+  padding: 3px 5px;
+  margin-top: 2px;
 }
