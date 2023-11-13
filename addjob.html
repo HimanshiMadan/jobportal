@@ -1,36 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
     <title>Job Portal</title>
-</head>
-<body>
+  </head>
+  <body>
+    <header><h1>NSUT TNP Job Portal</h1></header>
+    <div class="page-content">
+      <h1 class="page-heading">Job Description</h1>
+      <div class="form-container">
+        <form action="addjob.php" method="post">
+          <label for="jobtitle">Job Title</label>
+          <input type="text" id="jobtitle" name="jobtitle" />
+          <br /><br />
 
-    <h1>Add Job here: </h1>
+          <label for="min_qual">Minimum Qualifications: </label>
+          <input type="text" id="min_qual" name="min_qual" />
+          <br /><br />
 
-    <form action="addjob.php" method="post">
-        <label for="jobtitle">Job Title</label>
-        <input type="text" id="jobtitle" name="jobtitle">
-        <br><br>
+          <label for="techstack">Tech Stack: </label>
+          <input type="text" id="techstack" name="techstack" />
+          <br /><br />
 
-        <label for="min_qual">Minimum Qualifications: </label>
-        <input type="text" id="min_qual" name="min_qual">
-        <br><br>
+          <label for="jobdesc">Job Description: </label>
+          <input type="text" id="jobdesc" name="jobdesc" />
+          <br /><br />
 
-        <label for="techstack">Tech Stack: </label>
-        <input type="text" id="techstack" name="techstack">
-        <br><br>
-
-        <label for="jobdesc">Job Description: </label>
-        <input type="text" id="jobdesc" name="jobdesc">
-        <br><br><br><br>
-
-        <button type="submit" class="btn">Add</button>
-    </form>
-
-    <br><br>
-    <a href="jobposted.php">Home</a>
-    
-</body>
+          <div class="form-submission">
+            <div class="form-submission--element">
+              <button type="submit">Add</button>
+            </div>
+            <div class="form-submission--element">
+              <a href="jobposted.php">Home</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>

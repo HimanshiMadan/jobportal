@@ -1,38 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
     <title>Company details</title>
-</head>
-<body>
+  </head>
+  <body>
+    <header><h1>NSUT TNP Job Portal</h1></header>
+    <div class="page-content">
+      <h1 class="page-heading">Company Details</h1>
+      <div class="form-container">
+        <form action="company.php" method="post">
+          <label for="cname">Company Name: </label>
+          <input type="text" id="cname" name="cname" />
+          <br /><br />
 
-    <h2>Company Details</h1>
+          <label for="contact_no">Contact No.: </label>
+          <input type="text" id="contact_no" name="contact_no" />
+          <br /><br />
 
-    <form action="company.php" method="post">
+          <label for="cwebsite">Company Website: </label>
+          <input type="text" id="cwebsite" name="cwebsite" />
+          <br /><br />
 
-        <label for="cname">Company Name: </label>
-        <input type="text" id="cname" name="cname">
-        <br><br>
+          <label for="cmail">Company's email address: </label>
+          <input type="text" id="cmail" name="cmail" />
+          <br /><br />
 
-        <label for="contact_no">Contact No.: </label>
-        <input type="text" id="contact_no" name="contact_no">
-        <br><br>
+          <label for="about">About Company: </label>
+          <input type="text" id="about" name="about" />
+          <br /><br />
 
-        <label for="cwebsite">Company Website: </label>
-        <input type="text" id="cwebsite" name="cwebsite">
-        <br><br>
-        
-        <label for="cmail">Company's email address: </label>
-        <input type="text" id="cmail" name="cmail">
-        <br><br>
-
-        <label for="about">About Company: </label>
-        <input type="text" id="about" name="about">
-        <br><br>
-
-        <button type="submit" class="btn">Submit</button>
-    </form>
-
-</body>
+          <div class="form-submission">
+            <div class="form-submission--element">
+              <button type="submit">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>
