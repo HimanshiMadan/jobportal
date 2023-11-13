@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Portal</title>
+</head>
+<body>
+
+    <h1>Add Job here: </h1>
+
+    <form action="addjob.php" method="post">
+        <label for="jobtitle">Job Title</label>
+        <input type="text" id="jobtitle" name="jobtitle">
+        <br><br>
+
+        <label for="min_qual">Minimum Qualifications: </label>
+        <input type="text" id="min_qual" name="min_qual">
+        <br><br>
+
+        <label for="techstack">Tech Stack: </label>
+        <input type="text" id="techstack" name="techstack">
+        <br><br>
+
+        <label for="jobdesc">Job Description: </label>
+        <input type="text" id="jobdesc" name="jobdesc">
+        <br><br><br><br>
+
+        <button type="submit" class="btn">Add</button>
+    </form>
+
+    <br><br>
+    <a href="jobposted.php">Home</a>
+    
+</body>
+</html>
